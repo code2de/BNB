@@ -1,0 +1,94 @@
+#HTML CODE
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Resource Booking System</title>
+    <link rel="stylesheet" href="frontend.css">
+</head>
+<body>
+    <header>
+        <h1>Campus Resource Booking System</h1>
+    </header>
+
+    <main>
+        <section class="resources">
+            <h2>Available Resources</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Resource Name</th>
+                        <th>Type</th>
+                        <th>Location</th>
+                        <th>Availability</th>
+                        <th>Book Now</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>D201</td>
+                        <td>Classroom</td>
+                        <td>D block</td>
+                        <td>Available</td>
+                        <td><button class="book-btn">Book</button></td>
+                    </tr>
+                    <tr>
+                        <td>KS01</td>
+                        <td>Lecture hall</td>
+                        <td>Idea factory</td>
+                        <td>Booked</td>
+                        <td><button class="book-btn" disabled>Booked</button></td>
+                    </tr>
+                    <tr>
+                        <td>Main seminar hall</td>
+                        <td>Seminar hall</td>
+                        <td>B block</td>
+                        <td>Booked</td>
+                        <td><button class="book-btn" disabled>Booked</button></td>
+                    </tr>
+                    <tr>
+                        <td>D103</td>
+                        <td>Heritage hall</td>
+                        <td>D block</td>
+                        <td>Available</td>
+                        <td><button class="book-btn">Book</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="booking-form">
+            <h2>Book a Resource</h2>
+            <form action="#" method="POST">
+                <label for="resource">Select Resource:</label>
+                <select id="resource" name="resource">
+                    <option value="Study Room 101">Study Room 101</option>
+                    <option value="Projector">Projector</option>
+                    <option value="Sports Hall">Sports Hall</option>
+                </select>
+
+                <label for="start-time">Start Time:</label>
+                <input type="datetime-local" id="start-time" name="start-time">
+
+                <label for="end-time">End Time:</label>
+                <input type="datetime-local" id="end-time" name="end-time">
+
+                <input type="submit" value="Book Resource">
+            </form>
+        </section>
+        <section class="reminders">
+            <h2>Your Reminders</h2>
+            <ul>
+                <li>Study Room 101 booking starts at 10:00 AM</li>
+                <li>Sports Hall booking starts at 2:00 PM</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Campus Resource Booking System. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
